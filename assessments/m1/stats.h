@@ -9,19 +9,40 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Headers file for stats.c
  *
- * <Add Extended Description Here>
+ * This is part of a coursera course - Introduction to embedded systems
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Eliad Cohen
+ * @date Jan 22 2023
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
 /* Add Your Declarations and Function Comments here */ 
+// print_statistics() - A function that prints the statistics of an array including minimum, maximum, mean, and median.
+void print_statistics();
+
+// print_array() -  Given an array of data and a length, prints the array to the screen
+void print_array(unsigned char data[], int length);
+
+// find_median() - Given an array of data and a length, returns the median value
+float find_median(unsigned char data[], int length);
+
+// find_mean() -  Given an array of data and a length, returns the mean
+float find_mean(unsigned char *data, int length);
+
+// find_maximum() -  Given an array of data and a length, returns the maximum
+float find_maximum(unsigned char data[], int length);
+
+// find_minimum() -  Given an array of data and a length, returns the minimum
+float find_minimum(unsigned char data[], int length);
+
+// sort_array() - Given an array of data and a length, sorts the array from largest to smallest.  (The zeroth Element should be the largest value, and the last element (n-1) should be the smallest value. )
+void sort_array(int* data[], int length);
+
 
 /**
  * @brief <Add Brief Description of Function Here>
